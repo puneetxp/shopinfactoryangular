@@ -30,8 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 `ng add @angular/material`
 `ng g c component/home`
-`ng g c component/itr`
-`ng g c component/gst`
+`ng g c component/showcase`
 `ng g c static/header`
 `ng g c static/footer`
 `ng g c user/login`

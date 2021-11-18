@@ -5,8 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './component/home/home.component';
-import { ItrComponent } from './component/itr/itr.component';
-import { GstComponent } from './component/gst/gst.component';
 import { HeaderComponent } from './static/header/header.component';
 import { FooterComponent } from './static/footer/footer.component';
 import { LoginComponent } from './user/login/login.component';
@@ -15,20 +13,20 @@ import { AdminComponent } from './user/admin/admin.component';
 import { OrderComponent } from './user/order/order.component';
 import { CartComponent } from './user/cart/cart.component';
 import { MaterialModule } from './material/material.module';
+import { ShowcaseComponent } from './component/showcase/showcase.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ItrComponent,
-    GstComponent,
     HeaderComponent,
     FooterComponent,
     LoginComponent,
     RegisterComponent,
     AdminComponent,
     OrderComponent,
-    CartComponent
+    CartComponent,
+    ShowcaseComponent
   ],
   imports: [
     BrowserModule,
