@@ -7,7 +7,7 @@ import { HomeComponent } from './component/home/home.component';
 const routes: Routes = [
   {
     path : '',
-    component :ShowcaseComponent
+    component :HomeComponent
   }
 ];
 @NgModule({

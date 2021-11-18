@@ -14,6 +14,7 @@ import { OrderComponent } from './user/order/order.component';
 import { CartComponent } from './user/cart/cart.component';
 import { MaterialModule } from './material/material.module';
 import { ShowcaseComponent } from './component/showcase/showcase.component';
+import { CheckphoneComponent } from './component/checkphone/checkphone.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ShowcaseComponent } from './component/showcase/showcase.component';
     AdminComponent,
     OrderComponent,
     CartComponent,
-    ShowcaseComponent
+    ShowcaseComponent,
+    CheckphoneComponent
   ],
   imports: [
     BrowserModule,
