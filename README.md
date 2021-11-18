@@ -28,15 +28,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Install on 170018112021
 
-`ng add @angular/material
-ng g c component/home
-ng g c component/itr
-ng g c component/gst
-ng g c static/header
-ng g c static/footer
-ng g c user/login
-ng g c user/register
-ng g c user/admin
-ng g c user/order
-ng g c user/cart
-ng g m material --module=app`
+`ng add @angular/material`
+`ng g c component/home`
+`ng g c component/itr`
+`ng g c component/gst`
+`ng g c static/header`
+`ng g c static/footer`
+`ng g c user/login`
+`ng g c user/register`
+`ng g c user/admin`
+`ng g c user/order`
+`ng g c user/cart`
+`ng g m material --module=app`
