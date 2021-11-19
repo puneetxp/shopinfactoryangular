@@ -15,6 +15,7 @@ import { CartComponent } from './user/cart/cart.component';
 import { MaterialModule } from './material/material.module';
 import { ShowcaseComponent } from './component/showcase/showcase.component';
 import { CheckphoneComponent } from './component/checkphone/checkphone.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,8 @@ import { CheckphoneComponent } from './component/checkphone/checkphone.component
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
