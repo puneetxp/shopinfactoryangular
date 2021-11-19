@@ -34,8 +34,8 @@ import { CheckphoneComponent } from './component/checkphone/checkphone.component
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
-  ],
+    MaterialModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

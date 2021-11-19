@@ -39,3 +39,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 `ng g c user/order`
 `ng g c user/cart`
 `ng g m material --module=app`
+`npm i -s @angular/flex-layout @angular/cdk`

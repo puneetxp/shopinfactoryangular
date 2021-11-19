@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-home',
@@ -7,13 +8,9 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
-
-  constructor(public dialog: MatDialog) { }
-
+  constructor() { }
   ngOnInit(): void {
-    DialogElementsExampleDialog;
   }
-
 }
 @Component({
   selector: 'home.component-dialog',
