@@ -10,8 +10,12 @@ export class LoginComponent implements OnInit, OnChanges {
 
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   hide = true;
-  constructor() { }
 
+  Login(){
+
+  }
+
+  constructor() { }
   ngOnInit(): void {
 
   }
