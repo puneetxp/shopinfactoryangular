@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -6,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.component.sass']
 })
 export class RegisterComponent implements OnInit {
+  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
+  hide = true;
+
+  SignUp(){
+
+  }
 
   constructor() { }
 
