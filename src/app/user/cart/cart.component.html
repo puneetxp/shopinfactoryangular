@@ -1,5 +1,36 @@
-<div class="container">
-    <mat-card>
-
-    </mat-card>
+<div class="container cart_page">
+    <div class="cart_items">
+        <h1>Cart</h1>
+        <mat-card *ngFor="let item of items">
+            <mat-card-title-group class="cart_flex">
+                <div>
+                    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" height="30">
+                </div>
+                <mat-card-title>
+                    {{ item.product_name}}
+                </mat-card-title>
+                <mat-card-subtitle>
+                    {{ item.category}}
+                </mat-card-subtitle>
+                <button mat-icon-button mat-card-sm-image class="cart-icon" aria-label=" icon-button with cart icon">
+                    <mat-icon>add_shopping_cart</mat-icon>
+                  </button>
+            </mat-card-title-group>
+        </mat-card>
+    </div>
+    <div class="suggestion">
+        <h2>Suggestion</h2>
+        <mat-card *ngFor="let item of items">
+            <mat-card-header>
+                <div mat-card-avatar style=" background-image: url('{{item.photo.src}}');
+                background-size: cover;">
+                </div>
+                <mat-card-title>
+                    {{ item.product_name}}
+                </mat-card-title>
+                <mat-card-subtitle>
+                    {{ item.category}}</mat-card-subtitle>
+            </mat-card-header>
+        </mat-card>
+    </div>
 </div>
