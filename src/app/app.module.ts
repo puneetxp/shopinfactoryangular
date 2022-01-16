@@ -16,6 +16,8 @@ import { MaterialModule } from './material/material.module';
 import { ShowcaseComponent } from './component/showcase/showcase.component';
 import { CheckphoneComponent } from './component/checkphone/checkphone.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ProductComponent } from './public/product/product.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     OrderComponent,
     CartComponent,
     ShowcaseComponent,
-    CheckphoneComponent
+    CheckphoneComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +41,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
