@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { stringify } from 'querystring';
+// import { stringify } from 'querystring';
 import { Product } from 'src/app/model/product';
 import { ProductService } from 'src/app/services/product.service';
 
@@ -18,7 +18,7 @@ export class ProductComponent implements OnInit {
     this.getProduct();
   }
   getProduct(): void {
-    const id: string = String(this.route.snapshot.paramMap.get('name'));
+    const id: string = String(this.route.snapshot.paramMap.get('slug'));
     this.productservice.getProduct(id);
   }
 }
