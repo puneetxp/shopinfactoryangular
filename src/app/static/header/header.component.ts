@@ -1,5 +1,6 @@
 import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+//import $ from "jquery/JQueryStatic";
 
 @Component({
   selector: 'app-header',
@@ -15,7 +16,7 @@ export class HeaderComponent implements OnDestroy {
   private _mobileQueryListener: () => void;
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
-    this.mobileQuery = media.matchMedia('(max-width:'+ window.innerWidth+'px)');
+    this.mobileQuery = media.matchMedia('(max-width:' + window.innerWidth + 'px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
@@ -28,6 +29,12 @@ export class HeaderComponent implements OnDestroy {
 
   // constructor() { }
 
-  // ngOnInit(): void {
-  // }
+  ngOnInit(): void {
+    //eval("alert('Hello')");
+    setTimeout(() => {
+      eval("$('mat-sidenav')[0].children[0].setAttribute('id','style-1')");
+    }, 1500);
+
+
+  }
 }
