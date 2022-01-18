@@ -18,6 +18,8 @@ import { CheckphoneComponent } from './component/checkphone/checkphone.component
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ProductComponent } from './public/product/product.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GridComponent } from './public/grid/grid.component';
+import { BodyComponent } from './body/body.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     ShowcaseComponent,
     CheckphoneComponent,
     ProductComponent,
+    GridComponent,
+    BodyComponent,
   ],
   imports: [
     BrowserModule,

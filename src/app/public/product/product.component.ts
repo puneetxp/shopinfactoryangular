@@ -18,8 +18,11 @@ export class ProductComponent implements OnInit {
     this.getProduct();
   }
   getProduct(): void {
-    const id: string = String(this.route.snapshot.paramMap.get('slug'));
-    this.productservice.getProduct(id);
+    this.route.queryParams.subscribe(params => {
+      this.name = params['name'];
+    });
+    // const id: string = String(this.route.snapshot.paramMap.get('name'));
+    // this.productservice.getProduct(id);
   }
 }
     // this.productservice.getProduct().subscribe(
