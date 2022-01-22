@@ -1,5 +1,5 @@
 import { MediaMatcher } from '@angular/cdk/layout';
-import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 //import $ from "jquery/JQueryStatic";
 
 @Component({
@@ -8,6 +8,8 @@ import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent implements OnDestroy {
+
+  @ViewChild('snav') snav:any
 
   mobileQuery: MediaQueryList;
 
@@ -31,8 +33,12 @@ export class HeaderComponent implements OnDestroy {
 
   ngOnInit(): void {
     //eval("alert('Hello')");
+
+    
+
     setTimeout(() => {
-      eval("$('mat-sidenav')[0].children[0].setAttribute('id','style-1')");
+      let nav = this.snav.nativeElement;
+      //eval("$('mat-sidenav')[0].children[0].setAttribute('id','style-1')");
     }, 1500);
 
 
