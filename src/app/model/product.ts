@@ -1,7 +1,7 @@
 export interface Product {
     id:number;
     name:string;
-    description:Text;
+    description:string;
     photo_id:number;
     category_id:number;
     mobile_id:number;
